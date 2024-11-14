@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Website Bootstrap</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+         <link rel="stylesheet" href="css/all.css">
+         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-secondary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+   <style>
+  
+.navbar {
+    transition: height 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    height: 65px; 
+}
+
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand .img-fix {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: none;
+    border: .2px solid rgb(250, 219, 154);
+}
+.shadowh1 {
+    margin-left: 10px;
+}
+   </style>
+
+
+         <script>
+            
+window.addEventListener('scroll', function () {
+    let navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+         </script>
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container topbar bg-dark d-none d-lg-block">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">online</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small></a>
+                        <!-- <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                     <a href="index.html" class="navbar-brand">
+
+                    <img class="img-fix justify-content-start" src="image/h1-removebg-preview.png" alt="">
+
+                    <h1 class="shadowh1 text-secondary display-6">SEF</h1></a>
+
+                     <span class="span-line"></span>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-secondary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto ">
+                            <a href="index.html" class="nav-item fw-bold nav-link active">Home</a>
+                            <a href="shop.html" class="nav-item fw-bold nav-link">Team</a>
+                            
+                            <a href="shop-detail.html" class="nav-item fw-bold nav-link">Services</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0 ">
+                                    <a href="cart.html" class="dropdown-item">Fullstack</a>
+                                    <a href="chackout.html" class="dropdown-item">Backend</a>
+                                    <a href="chackout.html" class="dropdown-item">Frontend</a>
+                                    <a href="chackout.html" class="dropdown-item">C++</a>
+                                    <a href="chackout.html" class="dropdown-item">Python</a>
+                                    <a href="cart.html" class="dropdown-item">English</a>
+                                    <a href="testimonial.html" class="dropdown-item">AI</a>
+                                    <a href="404.html" class="dropdown-item">More..</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item fw-bold nav-link">Contact</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-dark"></i></button>
+                            <a href="#" class="position-relative me-4 my-auto">
+                                <li class="login fw-bold text-secondary">Login</li></a>
+                            <div class="reg-box ">
+                                <div class="in-form">
+                                    <a href="#" class="my-auto"></a>
+                                 <h2>Login</h2>
+                                  <label for="email">Email</label>
+                                  <input type="text" id="email" required>
+                            
+                                  <label for="password">Password</label>
+                                  <input type="text" id="password" required>
+                            
+                                  <div class="mb-3">
+                                    <div class="form-check form-switch">
+                                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked " checked>
+                                      <label class="form-check-label " for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                    </div>
+                            
+                                    <div class="f-pass">
+                                      <a class="a-pass" href="">Forget Password?</a>
+                                      <span class="close">Close</span>
+                                      <button id="sign">Sign in</button>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="Search" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-12 col-lg-7">
+                        <h4 class="mb-3 text-secondary"> SEF Academy</h4>
+                        <h1 class="mb-5 display-3 text-dark">SoftWaRe EngiNeeRing FUTUER</h1>
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
+                            <button type="submit" class="btn bg-dark border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Click Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active rounded">
+                                    <img src="image/programming-background-with-person-working-with-codes-computer_23-2150010130.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                                    <a href="#" class="btn px-2 py-2 text-white rounded">Web Developer</a>
+                                </div>
+                                <div class="carousel-item rounded">
+                                    <img src="image/person-front-computer-working-html_23-2150040428.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                    <a href="#" class="btn px-2 py-2 text-white rounded">Web Designer</a>
+                                </div>
+                                <div class="carousel-item rounded">
+                                    <img src="image/schoolboy-carefully-using-pliers-fixing-robotics-car-stem-class-edification_31965-596113.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                    <a href="#" class="btn px-2 py-2 text-white rounded">Cyber Secuirty</a>
+                                </div>
+                                <div class="carousel-item rounded">
+                                    <img src="image/double-exposure-desktop-computer-human-brain-drawing-hologram-ai-concept_700248-89710.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                    <a href="#" class="btn px-2 py-2 text-white rounded">Python</a>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero End -->
+        <!-- icon start -->
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <!-- icon end -->
+           <!-- start welcome -->
+            <hr class="hr-welcome">
+            <div class="welcome bg-light text-center">
+              <h2 class="h2-welcome">Welcome To Academy</h2>
+              <hr class="min-welcome bg-secondary">
+              <p class="p-welcome">Online programming courses to prepare Future Software Engineers</p>
+             
+                 <a href="" class="btn px-5 py-2 bg-secondary text-white rounded">Find Us</a>
+            </div>
+            <hr class="hr2-welcome">
+            
+         <!-- start arrow -->
+         <div class="accordion" id="accordionExample">
+            <div class="accordion-item shadow p-1 mb-3 bg-body-tertiary rounded">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1# What is the job of a website designer?
+
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>A website designer, or what is known in English <code>(Web designer),</code></strong> 
+                  is a person who specializes in building information technology websites, and is responsible for designing the visual appearance of the website and its ease of use. He uses various design tools such as Adobe Photoshop,
+                   Adobe Illustrator, and others to help create the design
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow p-1 mb-3 bg-body-tertiary rounded ">
+              <h2 class="accordion-header">
+                
+              <button class="accordion-button fs-5  bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2# What do you need to learn web design?
+
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body ">
+                  <strong>1- Good knowledge of programming languages ​​and various technologies used in <code> web development such as HTML, CSS, JavaScript, PHP, and others. </code>
+                </strong> <br> 2- Graphic interface,user experience and content design skills. <br> 3- The ability to communicate well with the team and work independently. <br> 4- The ability to manage projects and determine tasks and priorities
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow p-1 mb-3 bg-body-tertiary rounded ">
+              <h2 class="accordion-header ">
+                <button class="accordion-button fs-5 bg-light text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3# What is the job of a website designer?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <strong>A web designer <code>creates and oversees all visual aspects of websites.</code></strong> Web designers plan, invent and create websites and web pages, many of which combine a number of visual elements including text, images, graphics and videos.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end arrow -->
+           <!-- start title -->
+           <hr class="hr2-welcome">
+           
+          
+              
+        <!-- Tastimonial Start -->
+        <div class="container-fluid testimonial py-5 fw-medium">
+            <div class="container py-5">
+                <div class="testimonial-header text-center">
+                    <h4 class="text-secondary">Our Testimonial</h4>
+                    <h1 class="display-5 mb-5 text-dark">Our Students Say About Us!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">
+                                   I study at the SEF Academy. I have learned a lot and now I 
+                                   have more experience to graduate into the labor marke
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="image/serious-pensive-young-student-looking-directly-camera_176532-8154.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Salah Tohamy</h4>
+                                    <p class="m-0 pb-3">Student</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fa-solid fa-star-half-stroke text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">I am learning programming within the Academy. Yes, I am still young, but now, thanks to the Academy,
+                                     I will become the little innovato
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="image/portrait-young-boy-school-student_23-2151031937.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Salim Ezz-Edine</h4>
+                                    <p class="m-0 pb-3">Student</p>
+                                    <div class="d-flex pe-5">
+                                     <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">I studied at the SEF Academy  I have become a website. They have experience that prepares you 
+                                    for the labor market and Credibility in learning.
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="image/young-man-with-backpack-holding-notepads-campus-building-background_352249-727.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Alaa Ghandour</h4>
+                                    <p class="m-0 pb-3">Web Development</p>
+                                    <div class="d-flex pe-5">
+                                       <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="fas fa-star text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr2-welcome2">
+
+        <!-- Tastimonial End -->
+        <!-- <div class="alert2 alert-dark fs-2 fw-bold text-center shadow " role="alert">
+            Courses
+          </div> -->
+
+          <h1 class="gradient-title2 header-main-title shadow-lg fw-bold w-80 mx-auto"> Courses</h1>
+            <style>
+                .gradient-title2 {
+                background: linear-gradient(45deg, #f39c12, #bebbbb, #414242);
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                padding: 20px;
+                background-color: #303131;
+                border-radius: 10px;
+                border: none;
+                margin-top: 10px;
+            }
+             .hr2-welcome2 {
+                 margin-top: -60px;
+             }
+            </style>
+         
+        <section id="more-features" class="more-features section">
+          
+            <div class="container">
+            
+                <div class="photo-clip shadow-lg mt-5">
+              <div class="row justify-content-around gy-4">
+      
+                <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Programming courses for children </h3>
+                  <a class="asmaa" href=""><i class="fa-solid fa-calendar-days"></i><b class="days">Sun.&nbsp;Nov 7,2024</b> </a>
+                   <span class="span1"></span>
+                  <p class="task">HTML & CSS Website Development This course includes teaching the HTML and CSS languages, which are the basis for building websites. ...
+                </p>
+      
+                 
+                <div class="row">
+                        
+                    <div class="col-lg-6 icon-box d-flex fs-6">
+                      <div>
+                        <a class="asmaa text-secondary" href=""> <i class="fa-solid fa-tag"></i><b class="b-icon" >Podcast</b> &nbsp;&nbsp; 
+                             <i class="fa-regular fa-thumbs-up asmaa"></i><b class="b-icon" >Like</b> &nbsp;&nbsp; 
+                             <i class="fa-regular fa-comments asmaa"></i><b class="b-icon" >Comment</b>
+                          &nbsp;&nbsp;  <i class="fa-solid fa-share asmaa"></i><b class="b-icon" >Share</b>
+                        </a> </div>
+                    </div><!-- End Icon Box -->
+      
+      
+                  </div>
+      
+                </div>
+                  <style>
+                      .photo-clip {
+                        border-radius: 18px;
+                        border: 0px solid rgb(235, 231, 231);
+                    }
+                    img {
+                        border-radius: 18px;
+                        border: 1px solid rgb(235, 231, 231);
+                        box-shadow: 2px 2px 3px 5px rgb(202, 201, 201);
+                    }
+                    .features-image {
+                        width: 500px;
+                        height: 380px;
+                        clip-path: polygon(24% 0 , 100% 0% , 100% 100% ,37% 100%);
+                    }
+                    .img-clip {
+                        width: 480px;
+                        height: 360px;
+                    }
+                   .span1 {
+                    width: 60px;
+                    height: 2px;
+                    background-color: rgb(228, 195, 8);
+                   }
+                   .task {
+                    margin-top: 15px;
+                   }
+                  </style>
+                <div class="features-image col-lg-5 order-1 " data-aos="fade-up" data-aos-delay="200">
+                  <img class="img-clip d-flex" src="image/html-css-collage-concept-with-person_23-2150062002.jpg" alt="" >
+                </div>
+      
+              </div>
+      
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+<!-- ///////////////////////////////////////////////////// -->
+            <section id="more-features" class="more-features section">
+          
+                <div class="container">
+                
+                    <div class="photo-clip2 shadow-lg">
+                        <div class="row justify-content-around gy-4">
+                
+                      <style>
+                          .photo-clip2 {
+                            border-radius: 18px;
+                            border: 0px solid rgb(235, 231, 231);
+                        }
+                        .features-image2 {
+                            width: 500px;
+                            height: 400px;
+                            clip-path: polygon(0 0 , 80% 0% , 63% 100% ,0% 100%);
+                        }
+                        .img-clip2 {
+                            width: 500px;
+                            height: 380px;
+                        }
+                       
+                      </style>
+                    <div class="features-image2 col-lg-5 order-1 " data-aos="fade-up" data-aos-delay="200">
+                      <img class="img-clip2" src="image/developer-fixing-database-errors_482257-91346.jpg" alt="" >
+                    </div>
+        
+                          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                            <h3>What do you need to learn cybersecurity?</h3>
+                            <a class="asmaa" href=""><i class="fa-solid fa-calendar-days"></i><b class="days">Sun.&nbsp;Nov 7,2024</b> </a>
+                            <span class="span1"></span>
+
+                            <p class="task">There are no prerequisites; All you need is an internet connection, and an undergraduate student in Computer Science/Computer Science or Communications Engineering. The content is designed and presented by cybersecurity experts according to the latest labor market trends in this field, with practical examples from real life using the latest visuals and graphics.
+                            </p>
+                
+                            <div class="row">
+                
+                              <div class="col-lg-6 icon-box d-flex">
+                                <div>
+                                 
+                                
+                               
+                                        <a class="asmaa text-secondary" href=""> <i class="fa-solid fa-tag"></i><b class="b-icon" >Podcast</b> &nbsp;&nbsp;
+                                            <i class="fa-regular fa-thumbs-up asmaa"></i><b class="b-icon" >Like</b> &nbsp;&nbsp; <i class="fa-regular fa-comments asmaa"></i><b class="b-icon" >Comment</b>
+                                          &nbsp;&nbsp;  <i class="fa-solid fa-share asmaa"></i><b class="b-icon" >Share</b>
+                                        </a> </div>
+                                    </div><!-- End Icon Box -->
+                      
+                              </div><!-- End Icon Box -->
+                
+                            </div>
+                
+                          </div>
+                        </div>
+                    </div>
+                </div>
+<!-- //////////////////////////////////////// 2 ///////////////////////////////////////////// -->
+
+                    <br>
+                    <br>
+                    <br>
+                <section id="more-features" class="more-features section">
+          
+                    <div class="container">
+                    
+                        <div class="photo-clip3 shadow-lg">
+                      <div class="row justify-content-around gy-4">
+              
+                        <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                          <h3>How to become a website designer?
+                        </h3>
+                        <a class="asmaa" href=""><i class="fa-solid fa-calendar-days"></i><b class="days">Sun.&nbsp;Nov 7,2024</b> </a>
+                        <span class="span1"></span>
+
+                        <p class="task">Learn the required programming languages.
+
+                            Familiarity with computer science, and of course computer science is broad, so learn some of the basics that you will only need while working as a website designer.
+                            
+                            Use Adobe programs, as you will need them a lot while working on Web Designer, especially Photoshop.
+                            
+                            Use the computer well</p>
+              
+                            <div class="row">
+                        
+                                <div class="col-lg-6 icon-box d-flex">
+                                  <div>
+                                    <a class="asmaa text-secondary" href=""><i class="fa-solid fa-tag"></i><b class="b-icon" >Podcast</b> &nbsp;&nbsp;
+                                         <i class="fa-regular fa-thumbs-up asmaa"></i><b class="b-icon" >Like</b> &nbsp;&nbsp; <i class="fa-regular fa-comments asmaa"></i><b class="b-icon" >Comment</b>
+                                      &nbsp;&nbsp;  <i class="fa-solid fa-share asmaa"></i><b class="b-icon" >Share</b>
+                                    </a> </div>
+                                </div><!-- End Icon Box -->
+                  
+              
+                          </div>
+              
+                        </div>
+                          <style>
+                              .photo-clip3 {
+                                border-radius: 18px;
+                                border: 0px solid rgb(235, 231, 231);
+                            }
+                            .features-image3 {
+                                width: 500px;
+                                height: 380px;
+                                clip-path: polygon(24% 0 , 100% 0% , 100% 100% ,37% 100%);
+                            }
+                            .img-clip3 {
+                                width: 480px;
+                                height: 360px;
+                            }
+                           
+                          </style>
+                        <div class="features-image3 col-lg-5 order-1 " data-aos="fade-up" data-aos-delay="200">
+                          <img class="img-clip3" src="image/man-celebrate-graduation-ceremonystudents-education-international-students-day-celebration_1219450-4576.jpg" alt="" >
+                        </div>
+              
+                      </div>
+              
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                   
+        <!-- ///////////////////////////////////////////////////// -->
+                    <section id="more-features" class="more-features section">
+                  
+                        <div class="container">
+                        
+                            <div class="photo-clip4 shadow-lg">
+                                <div class="row justify-content-around gy-4">
+                        
+                              <style>
+                                  .photo-clip4 {
+                                    border-radius: 18px;
+                                    border: 0px solid rgb(235, 231, 231);
+                                }
+                                .features-image4 {
+                                    width: 500px;
+                                    height: 400px;
+                                    clip-path: polygon(0 0 , 80% 0% , 63% 100% ,0% 100%);
+                                }
+                                .img-clip4 {
+                                    width: 500px;
+                                    height: 380px;
+                                }
+                               .asmaa {
+                                font-size: 12.5px;
+                               }
+                              </style>
+                            <div class="features-image4 col-lg-5 order-1 " data-aos="fade-up" data-aos-delay="200">
+                              <img class="img-clip4" src="image/3d-rendering-male-robot-working-computer-his-office_1057-45847.jpg" alt="" >
+                            </div>
+                
+                                  <div class="col-lg-6 d-flex flex-column justify-content-start order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                                    <h3>Programming courses have a future?
+                                    </h3>
+                                    <h5>Increase your chances of getting a new job</h5>
+
+                                   <a class="asmaa" href=""><i class="fa-solid fa-calendar-days"></i><b class="days">Sun.&nbsp;Nov 7,2024</b> </a>
+                                   <span class="span1"></span>
+
+
+                                    <p class="task">The importance of learning programming is highlighted in light of the positive expectations for job opportunities in areas such as software development, web development, and computer systems analysis, as this sector is expected to witness growth ranging 
+                                        between 9% and 21% during the next ten years, according to a study conducted by Potomac University.
+                                        </p>
+                                      
+                                    <div class="row">
+                        
+                                      <div class="col-lg-6 icon-box d-flex">
+                                        <div>
+                                          <a class="asmaa text-secondary" href=""><i class="fa-solid fa-tag"></i><b class="b-icon" >Podcast</b> &nbsp;&nbsp;
+                                            <i class="fa-regular fa-thumbs-up asmaa"></i><b class="b-icon" >Like</b> &nbsp;&nbsp; <i class="fa-regular fa-comments asmaa"></i><b class="b-icon" >Comment</b>
+                                            &nbsp;&nbsp;  <i class="fa-solid fa-share asmaa"></i><b class="b-icon" >Share</b>
+                                          </a> </div>
+                                      </div><!-- End Icon Box -->
+                        
+                                    </div>
+                        
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                      </section><!-- end Features Section -->
+<!-- .................................................................... -->
+ 
+<!-- ............................... srart scroll .......................................... -->
+
+<style>
+    /* قسم Parallax */
+    .parallax-section {
+      background-image: url('../fruitables-1.0.0/image/WhatsApp\ Image\ 2024-11-09\ at\ 22.46.37_219f7824.jpg '); /* استبدل رابط الصورة */
+      height: 80vh; /* يغطي كامل الشاشة */
+      background-attachment: fixed; /* لتثبيت الخلفية */
+      background-size: cover; /* لضمان تغطية الخلفية كاملة دون تشويه */
+      background-position: center center; /* لمحاذاة الصورة في المنتصف */
+      display: flex;
+      /* opacity:  rgba(0, 0, 0, 0.8); */
+      align-items: center; /* لتوسيط المحتوى عموديًا */
+      justify-content: center; /* لتوسيط المحتوى أفقيًا */
+      color: white;
+      font-size: 2em;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* تأثير الظل على النص */
+    }
+  
+    .content-section {
+      padding: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+      color: #333;
+      font-size: 1.5em;
+    }
+  
+    .parallax-section img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .parallax-section div {
+      font-size: 3em; /* تكبير الخط داخل الـ Parallax */
+      font-weight: bold;
+    }
+  </style>
+  
+  <hr class="hr2-welcome">
+
+  <!-- قسم الـ Parallax -->
+  <div class="parallax-section">
+    <!-- نص فوق الصورة -->
+    <div style="width: 100%;text-align: center; font-size: 50px; text-transform: capitalize; background-color: #D3D3D3; color: #f39c12;">
+    </div>
+  </div>
+  <hr class="hr2-welcome">
+
+<!-- ............................... end scrool ............................................ -->
+
+
+
+
+              <!-- ////////// start //////////// -->
+              <hr class="hr2-welcome">
+              <div class="alert alert-dark fs-2 fw-bold text-center shadow " role="alert">
+    User Data
+</div>  
+<hr class="hr2-welcome">
+
+<div class="form-container" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #D3D3D3; border-radius: 10px; margin-top: 20px;">
+    <!-- الجزء الخاص بالفورم -->
+    <div style="width: 48%; padding-right: 20px; flex-wrap: wrap;">
+        <div class="form-floating order-1 mb-3">
+            <input type="email" class="form-control" id="floatingInputForm" placeholder="name@example.com" style="width: 100%; height: 55px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <label for="floatingInputForm" style="font-family: 'Arial', sans-serif; font-weight: lighter;">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPasswordForm" placeholder="Password" style="width: 100%; height: 55px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <label for="floatingPasswordForm" style="font-family: 'Arial', sans-serif; font-weight: lighter;">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control mt-3" placeholder="Leave a comment here" id="floatingTextareaComments" style="height: 130px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"></textarea>
+            <label for="floatingTextareaComments" style="font-family: 'Arial', sans-serif; font-weight: lighter;">Comments</label>
+        </div>
+        <div class="copy-email">
+            <button id="submitButtonForm" onclick="submitData()" style="background-color: #f39c12; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+                Click here
+            </button>
+            <span id="enteredMessageForm" style="font-family: 'Arial', sans-serif; font-weight: normal; font-size: 14px; display: none; margin-top: 10px; color: #333;">Entered</span>
+        </div>
+    </div>
+    
+    <!-- الجزء الخاص بالصورة -->
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img class="img-into" src="image/hand-mouse-cursor-clicks-enter-button-3d-rendered-illustration_441797-4399-removebg-preview.png" alt="Image" style="width:100%; height:400px; object-fit: cover;">
+    </div>
+</div>
+
+<!-- رسالة التنبيه التي تظهر في أعلى الصفحة -->
+<div id="messageAlert" style="display: none; background-color: white; color: #333; padding: 30px 20px; text-align: center; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 10000; width: 80%; max-width: 400px; transition: top 0.5s; min-height: 160px;">
+    <div style="font-size: 30px; color: #2ecc71; margin-bottom: 7px;">&#10003;</div>
+    <strong style="font-family: 'Arial', sans-serif; font-weight: lighter; font-size: 18px; margin-top: -10px;">Data has been successfully entered!</strong>
+    <br>
+    <button onclick="closeMessageAlert()" style="background: #f39c12; border: none; color: white; font-size: 16px; padding: 8px 8px; border-radius: 50%; cursor: pointer; position: absolute; bottom: 10px; right: 10px;">
+        OK
+    </button>
+</div>
+
+<script>
+    function submitData() {
+        var message = document.getElementById("messageAlert");
+        var enteredMessage = document.getElementById("enteredMessageForm");
+        message.style.display = "block";
+        message.style.top = "20px";
+      
+        enteredMessage.style.display = "inline";
+        setTimeout(function() {
+            enteredMessage.style.display = "none";
+        }, 1000);
+    }
+  
+    function closeMessageAlert() {
+        var message = document.getElementById("messageAlert");
+        message.style.top = "-100px";
+        setTimeout(function() {
+            message.style.display = "none";
+        }, 500);
+    }
+  
+    document.getElementById("submitButtonForm").addEventListener("click", function() {
+        var enteredMessage = document.getElementById("enteredMessageForm");
+        enteredMessage.style.display = "inline";
+    });
+</script>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////  -->
+                                    <!-- <script>
+                                        function copyText() {
+                                            const textToCopy = document.getElementById("myInput").value;
+                                            navigator.clipboard.writeText(textToCopy)
+                                                .then(() => {
+                                                    alert("تم إدخال البيانات");
+                                                })
+                                                .catch(err => {
+                                                    alert("فشل النسخ، تحقق من إعدادات المتصفح.");
+                                                    console.error("خطأ في النسخ:", err);
+                                                });
+                                        }
+                                    </script> -->
+      <!-- ///////// end ////////////////// -->
+<!-- /////////////////////// start /////////////////////////////////////////////// -->
+
+     <!-- القسم الخاص بالعنوان -->
+<h1 class="gradient-title header-main-title shadow-lg w-50 mx-auto">Translation AR-EN</h1>
+
+              <!-- الجزء الخاص بالزر والـ textarea -->
+<div class="text-area-container">
+    <div class="write-translate-text fs-5 mb-3">Translation from Arabic to English:</div>
+    <!-- النص الذي سيظهر بجانب الزر -->
+    <div class="copied-text-display" id="copiedText">Text Copied To Data</div>
+    <button class="copy-btn fs-5" id="copyButton">Copy</button>
+    <textarea class="text-area-input w-100" placeholder="Type here.."></textarea>
+  </div>
+  
+  <!-- الرسالة التي تظهر بعد الضغط على زر copy -->
+  <div id="message-box">
+    <div class="message-box-content">
+      <strong>asmaaelshamly-code.github.io says</strong><br>
+      تم نسخ النص
+    </div>
+    <button id="okButton1">OK</button>
+  </div>
+  
+  <style>
+    /* التدرج اللوني للنص */
+    .gradient-title {
+      background: linear-gradient(45deg, #f39c12, #000000, #7f8c8d);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      background-color: #bdc3c7;
+      border-radius: 10px;
+      border: 2px solid #f39c12;
+      margin-top: 20px;
+    }
+  
+    /* تنسيق زر copy */
+    .copy-btn {
+      width: 120px;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: white;
+      border: 2px solid #f39c12;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+  
+    .copy-btn:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+    }
+  
+    /* تكبير حقل textarea */
+    .text-area-input {
+      width: 90%;
+      height: 200px;
+      margin-top: 10px;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      outline: none;
+    }
+  
+    /* تنسيق الرسالة */
+    #message-box {
+      display: none;
+      background-color: white;
+      color: #333;
+      padding: 30px 20px;
+      text-align: left;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 10000;
+      width: 80%;
+      max-width: 400px;
+      opacity: 0;
+      transition: opacity 1s ease, transform 1s ease;
+      transform: translateY(-100px);
+    }
+  
+    #message-box .message-box-content {
+      font-size: 16px;
+    }
+  
+    /* زر OK داخل الرسالة */
+    #okButton1 {
+      background-color: #f39c12;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 8px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+  
+  <script>
+    // دالة لنسخ النص وإظهار الرسالة
+    document.getElementById("copyButton").addEventListener("click", function() {
+      var copyText = document.querySelector(".text-area-input");
+      copyText.select();
+      document.execCommand("copy");
+  
+      // إظهار نص "Text Copied To Data" بجانب الزر
+      var copiedText = document.getElementById("copiedText");
+      copiedText.style.display = "inline-block";
+      copiedText.classList.add("show");
+  
+      setTimeout(function() {
+        copiedText.classList.remove("show");
+        setTimeout(function() {
+          copiedText.style.display = "none";
+        }, 500);
+      }, 1500);
+  
+      // إظهار الرسالة عند الضغط على زر Copy
+      var messageBox = document.getElementById("message-box");
+      messageBox.style.display = "block";
+      setTimeout(function() {
+        messageBox.style.opacity = 1;
+        messageBox.style.transform = "translateY(0)";
+      }, 100);
+    });
+  
+    // دالة إغلاق الرسالة عند الضغط على زر OK
+    document.getElementById("okButton1").addEventListener("click", function() {
+      var messageBox = document.getElementById("message-box");
+      messageBox.style.opacity = 0;
+      messageBox.style.transform = "translateY(-100px)";
+      setTimeout(function() {
+        messageBox.style.display = "none";
+      }, 500);
+    });
+  </script>
+  
+
+<!-- ............................................ السيكشن التاني ............................................. -->
+
+<hr class="hr2-welcome">
+
+<h1 class="gradient-title header-main-title shadow-lg w-50 mx-auto">Translation AR-DE</h1>
+
+<div class="text-area-container">
+  <div class="write-translate-text fs-5 mb-3">Translation from Arabic to Deutsch:</div>
+  <div class="copied-text-display" id="copiedText2">Text Copied To Data</div>
+  <button class="copy-btn fs-5" id="copyButton2">Copy</button>
+  <textarea class="text-area-input w-100" placeholder="Type here.."></textarea>
+</div>
+
+<div id="message-box2" class="message-box">
+  <div class="message-box-content">
+    <strong>asmaaelshamly-code.github.io says</strong><br>
+    تم نسخ النص
+  </div>
+  <button onclick="closeMessage('message-box2')">OK</button>
+</div>
+
+<style>
+  .gradient-title {
+    background: linear-gradient(45deg, #f39c12, #bebbbb, #414242);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: #303131;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .header-main-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .copy-btn {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: 2px solid #f39c12;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .copy-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+  }
+
+  .text-area-input {
+    width: 90%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+
+  .message-box {
+    display: none;
+    background-color: white;
+    color: #333;
+    padding: 30px 20px;
+    text-align: left;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 10000;
+    width: 80%;
+    max-width: 400px;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(-100px);
+  }
+
+  .message-box .message-box-content {
+    font-size: 16px;
+  }
+
+  .message-box button {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .translate-section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .text-area-container {
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .write-translate-text {
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  .copied-text-display {
+    display: none;
+    color: rgb(241, 238, 238);
+    background-color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    opacity: 0;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: transform 0.5s ease, opacity 0.8s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .copied-text-display.show {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+</style>
+
+<script>
+  document.getElementById("copyButton2").addEventListener("click", function() {
+    var copyText = document.querySelector("#copyButton2").nextElementSibling;
+    copyText.select();
+    document.execCommand("copy");
+
+    var copiedText = document.getElementById("copiedText2");
+    copiedText.style.display = "inline-block";
+    copiedText.classList.add("show");
+
+    setTimeout(function() {
+      copiedText.classList.remove("show");
+      setTimeout(function() {
+        copiedText.style.display = "none";
+      }, 500);
+    }, 1500);
+
+    var messageBox = document.getElementById("message-box2");
+    messageBox.style.display = "block";
+    setTimeout(function() {
+      messageBox.style.opacity = 1;
+      messageBox.style.transform = "translateY(0)";
+    }, 100);
+  });
+
+  function closeMessage(messageId) {
+    var messageBox = document.getElementById(messageId);
+    messageBox.style.opacity = 0;
+    messageBox.style.transform = "translateY(-100px)";
+    setTimeout(function() {
+      messageBox.style.display = "none";
+    }, 500);
+  }
+
+</script>
+
+
+
+ <!-- ///////////////////// end //////////////////////////////////////////////// -->
+
+<!-- ................................. card copy ........................................ -->
+
+     
+       <!-- Courses Start -->
+      <style>
+        .img-fluid{
+            width: 100%;
+            height: 300px;
+        }
+        /* التأثير عند الوقوف على الكارد */
+.course-item {
+    position: relative;
+    overflow: hidden;  /* لضمان أن التأثيرات لا تخرج عن حدود العنصر */
+    border-radius: 13px;
+}
+
+/* تأثير ::before */
+.course-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* العرض نفس عرض العنصر */
+    height: 100%;  /* الارتفاع نفس ارتفاع العنصر */
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(0);  /* التأثير من داخل العنصر */
+    transform-origin: top left;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+/* تأثير ::after */
+.course-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;  /* العرض نفس عرض العنصر */
+    height: 100%;  /* الارتفاع نفس ارتفاع العنصر */
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(0);  /* التأثير من داخل العنصر */
+    transform-origin: bottom right;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+/* عند الوقوف على العنصر (hover) */
+.course-item:hover::before {
+    transform: scale(1); /* يبدأ من الأعلى */
+    transform-origin: top left;  /* يبدأ من الزاوية العلوية اليسرى */
+}
+
+.course-item:hover::after {
+    transform: scale(1); /* يبدأ من الأسفل */
+    transform-origin: bottom right; /* يبدأ من الزاوية السفلية اليمنى */
+}
+
+      </style>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5">Available Courses</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/cat-4.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">free</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(4.0)</small>
+                            </div>
+                            <h5 class="mb-4">English Course for <br> Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>John Moc</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>3k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>33k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/composite-image-composite-image-build-website-interface_1134-27582.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+
+
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">$137.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(4.7)</small>
+                            </div>
+                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Eslam</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>8k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>597k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/design-html-web-design-template-concept_53876-133658.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">$49.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(4.4)</small>
+                            </div>
+                            <h5 class="mb-4">Web Design Course for Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Eslam</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>4k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>480k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/person-front-computer-working-html_23-2150040425.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">$120.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(4.9)</small>
+                            </div>
+                            <h5 class="mb-4">Web Development Course for Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Eslam</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>7k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>802k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/ai-robot-1_1030535-73.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">free</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(3.6)</small>
+                            </div>
+                            <h5 class="mb-4">Artificial Intelligence(AI) Course for Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Eslam</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>2k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>22k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/father-son-making-robot_23-2148863350.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">free</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(4.1)</small>
+                            </div>
+                            <h5 class="mb-4">Scratch Course for <br> Children's</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Marwan</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>1k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>38k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/close-up-notebook-with-glowing-robot-head-icons-desk-with-coffee-cup-blurry-window-with-city-view-background-chat-gpt-machine-learning-ai-concept-3d-rendering_6701.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">$149.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(4.4)</small>
+                            </div>
+                            <h5 class="mb-4">Web Design & Development Course for Advanced</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Eslam</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>1k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>301k Students</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="image/close-up-laptop-desktop-with-creative-glowing-russian-ruble-hologram-blurry-background-digital-money-online-banking-concept-double-exposure_670147-4687.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-secondary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">$109.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small class="fa fa-star text-secondary"></small>
+                                <small>(3.8)</small>
+                            </div>
+                            <h5 class="mb-4">Phython Course for <br> Beginners</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-secondary me-2"></i>Eng-Eslam</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-secondary me-2"></i>1k Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-secondary me-2"></i>63k Students</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+<!-- ------------------------- start scroll 2 -------------------------------- -->
+
+            
+<style>
+    /* قسم Parallax */
+    .parallax-section2 {
+        background-image: url('../fruitables-1.0.0/image/WhatsApp\ 2024-11-09\ at\ 23.31.47_c8b96a10.jpg');
+      height: 70vh; /* يغطي كامل الشاشة */
+      background-attachment: fixed; /* لتثبيت الخلفية */
+      background-size: cover; /* لضمان تغطية الخلفية كاملة دون تشويه */
+      background-position: center center; /* لمحاذاة الصورة في المنتصف */
+      display: flex;
+      /* opacity:  rgba(0, 0, 0, 0.8); */
+      align-items: center; /* لتوسيط المحتوى عموديًا */
+      justify-content: center; /* لتوسيط المحتوى أفقيًا */
+      color: white;
+      font-size: 2em;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* تأثير الظل على النص */
+    }
+  
+    .content-section2 {
+      padding: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+      color: #333;
+      font-size: 1.5em;
+    }
+  
+    .parallax-section2 img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .parallax-section2 div {
+      font-size: 3em; /* تكبير الخط داخل الـ Parallax */
+      font-weight: bold;
+    }
+  </style>
+  
+  <hr class="hr2-welcome">
+
+  <!-- قسم الـ Parallax -->
+  <div class="parallax-section2">
+    <!-- نص فوق الصورة -->
+    <div style="width: 100%;text-align: center; font-size: 50px; text-transform: capitalize; background-color: #D3D3D3; color: #f39c12;">
+    </div>
+  </div>
+  <hr class="hr2-welcome">
+
+<!-- ----------------------------- end scroll2 ------------------------------------ -->
+ <!-- ----------------------------- start photo -->
+<div class="title">
+  Trainers
+</div>
+<div class="gallery">
+  <div class="photo  order-md-1 order-sm-1 order-2 ">
+    <div class="overlay shadow ">
+      <h3 class="all-title">All thanks and appreciation</h3>
+        <div class="date-icon">November 10, 2024</div>
+        <div class="content">
+        <p>Eng. Mohammed Ismail</p>
+        <p>Director of UI/UX</p>
+      </div>
+    </div>
+    <div class="background-image" style="background-image: url('image/man-sits-desk-with-laptop-smiles-camera_985092-344.jpg');"></div>
+    <img src="image/man-sits-desk-with-laptop-smiles-camera_985092-344.jpg" alt="Oval Image" class="oval-image">
+  </div>
+
+  <div class="photo">
+    <div class="overlay">
+      <h3 class="all-title">All thanks and appreciation</h3>
+      <div class="date-icon">November 10, 2024</div>
+      <div class="content">
+        <p>Eng. Islam Mohammed</p>
+        <p>Director of UI/UX</p>
+      </div>
+    </div>
+    <div class="background-image" style="background-image: url('image/technology-communication-mass-media-virtual-reality-people-concept-young-man-headset-eyeglasses-with-pc-computer-keyboard-virtual-screens_380164-139093.jpg');"></div>
+    <img src="image/technology-communication-mass-media-virtual-reality-people-concept-young-man-headset-eyeglasses-with-pc-computer-keyboard-virtual-screens_380164-139093.jpg" alt="Oval Image" class="oval-image">
+  </div>
+
+  <div class="photo">
+    <div class="overlay">
+      <h3 class="all-title">All thanks and appreciation</h3>
+      <div class="date-icon">November 10, 2024</div>
+      <div class="content">
+        <p class="eng">Eng. Asmaa Elshamly</p>
+        <p class="eng">Full Stack Delevloper</p>
+      </div>
+    </div>
+    <div class="background-image" style="background-image: url('image/anna.jpg');"></div>
+    <img src="image/anna.jpg" alt="Oval Image" class="oval-image">
+  </div>
+</div>
+
+<!-- //////////////////  style -->
+
+<style>
+/* إعدادات العنوان */
+.title {
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, white , gray);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+}
+.all-title {
+margin-bottom: 100%;  
+padding-right: 60px;
+}
+/* لضبط الصور بجانب بعض */
+.gallery {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  margin-top: 60px;
+}
+
+.photo {
+  position: relative;
+  width: 360px;
+  height: 430px;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(.80); /* تصغير الصورة عند التمرير */
+}
+
+.photo h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* الشفافية على الصورة الخلفية */
+  background-color: rgba(0, 0, 0, 0.4); /* شفافية سوداء */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.date-icon {
+  position: absolute;
+  top: 40px;
+  margin-left: 20px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* توحيد بداية النصوص (First Name، October، Eng، Director) */
+.overlay .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 100px; /* تأكد من أن بداية النصوص موحدة */
+}
+
+.overlay .content p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* لضبط المسافات بين النصوص وتوحيد بدايتها */
+.name, .position, .date-icon {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.date-icon {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.5); /* شفافية خفيفة */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.name, .position {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.oval-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 60px;
+  left: 60px; /* قم بتعديل هذه القيمة حسب الحاجة */
+}
+
+/* التأثير على الصورة عند الوقوف عليها */
+.oval-image:hover {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+
+/* إعدادات الصورة البيضاوية الصغيرة */
+.oval-image {
+  position: absolute;
+  bottom: 60px; /* الصورة تنزل أكثر لتحت */
+  left: 30px; /* المسافة من اليسار */
+  width: 90px; /* عرض الصورة البيضاوية */
+  height: 100px; /* ارتفاع الصورة البيضاوية */
+  border-radius: 50%;
+  object-fit: cover;
+  border:1px solid yellow;
+  box-shadow: none; /* إزالة الظل */
+}
+
+/* تعديل لكلمة أكتوبر */
+.date-icon {
+  top: 30px;
+  left: 10px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+</style>
+
+
+
+<!-- -------------------------- end photo ------------------------------------ -->
+      <hr class="hr2-welcome">
+
+     
+          <!-- Featurs Section Start -->
+        <div class="container-fluid featurs py-5">
+          <h1 class="gradient-title3 header-main-title w-50 mx-auto">Contact Us</h1>
+          <hr class="us"></hr>
+          <style> 
+            .us {
+              width: 70px;
+              height: 8px;
+              background-color: black;
+              margin: auto;
+            }
+              
+             .featurs-item:hover {
+              transform: scale(0.90);
+              transition: transform 0.2s ease;
+             }
+          </style>
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4 shadow">
+                          <h5>Register with us</h5>
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary shadow-lg text-bg-success fs-1 mb-5 mx-auto">
+                              <i class="fa-brands fa-facebook-f shadow-lg"></i>                          
+                              </div>
+                            <div class="featurs-content text-center">
+                              <a class="goto text-decoration-none text-success fs-5 fw-bold " href="">Go to link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="featurs-item text-center rounded bg-light p-4 shadow">
+                        <h5>Follow </h5>
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary text-primary shadow-lg  fs-1 mb-5 mx-auto">
+                          <i class="fa-brands fa-whatsapp shadow-lg"></i>                       
+                             </div>
+                          <div class="featurs-content text-center">
+                            <a class="goto text-decoration-none text-success fs-5 fw-bold " href="">Go to link</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4 shadow">
+                      <h5>Join us</h5>
+                      <div class="featurs-icon btn-square rounded-circle bg-secondary shadow-lg text-danger fs-1 mb-5 mx-auto">
+                        <i class="fa-brands fa-instagram shadow-lg"></i>                          
+                       </div>
+                        <div class="featurs-content text-center">
+                          <a class="goto text-decoration-none text-success fs-5 fw-bold " href="">Go to link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="featurs-item text-center rounded bg-light p-4 shadow">
+                    <h5>Like the pagr</h5>
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary shadow-lg text-bg-success fs-1 mb-5 mx-auto">
+
+                      <i class="fa-brands fa-linkedin-in shadow-lg"></i>                    
+                        </div>
+                      <div class="featurs-content text-center">
+                        <a class="goto text-decoration-none text-success fs-5 fw-bold " href="">Go to link</a>
+                      </div>
+                  </div>
+              </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featurs Section End -->
+
+
+
+
+
+<!-- .................................. end copy 3  ........................................ -->
+      
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+
+                                <h1 class="text-secondary mb-0">SEF</h1>
+                                <p class="text-secondary mb-0">For Programmers</p>
+                            </a>
+                           
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                                <button type="submit" class="btn btn-secondary border-0 border-light py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why join Like us!</h4>
+                            <p class="mb-4"> Credibility in education and learning for the labor market. This academy was created for you,
+                                 as we provide you with different specializations of programming
+                               </p>
+                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-light">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Academy Info</h4>
+                            <a class="btn-link" href="">About Us</a>
+                            <a class="btn-link" href="">Contact Us</a>
+                            <a class="btn-link" href="">Privacy Policy</a>
+                            <a class="btn-link" href="">Terms & Condition</a>
+                            <a class="btn-link" href="">FAQs & Help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="">My Account</a>
+                            <a class="btn-link" href="">Course details</a>
+                            <a class="btn-link" href="">Payment details</a>
+                            <a class="btn-link" href="">Wishlist</a>
+                            <a class="btn-link" href="">Joining History</a>
+                            <a class="btn-link" href="">International Courses</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address:Egypt 29 Sea Rd</p>
+                            <p>Email: Example@gmail.com</p>
+                            <p>Phone: +2015 5517 7645</p>
+                            <p>Payment Accepted</p>
+                            <img src="image/h1-removebg-preview.png" class="img-fluid5 " alt="">
+                            <style>
+                                .img-fluid5 {
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 50%;
+                                    box-shadow: none;
+                                    border: 1px solid rgb(241, 203, 121);
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-secondary">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i> <b class="bb text-secondary" >seffuture@gmail.com</b></a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">Asmaa-Elshamly</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary border-3 border-light rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
